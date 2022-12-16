@@ -38,3 +38,7 @@
     padding: 10px;
     margin: 10px;
 }
+
+.brillo {
+    box-shadow : 0 0 20px yellow
+}
