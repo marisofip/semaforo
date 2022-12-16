@@ -8,18 +8,19 @@ import rigoImage from "../../img/rigo-baby.jpg";
 
 const Home = () => {
 	
-	const [enabled , setEnabled] = useState("")
+	const [enabled , setEnabled] = useState("");
+
 	
 	return (
-		<>
-		<div className="stick">  </div>
-		<div className="blackbox">
-		<div className={"luz roja brillando" + (enabled === "roja" ? "brillo" : " " )} onClick={() => setEnabled(rojo)}></div>
-		<div className={"luz amarilla brillando" + (enabled === "amarilla" ? "brillo" : " " )} onClick={() => setEnabled(amarilla)}></div>
-		<div className={"luz verde brillando" + (enabled === "verde" ? "brillo" : " " )} onClick={() => setEnabled(verde)}></div>
+			
+		<div className="container">
+			<div className= "stick position-absolute top-0"> | </div>
+					<div className="blackbox">
+		<div className={"luz roja " + (enabled === "roja" ? "brillo" : " " )} onClick={() => setEnabled("roja")}></div>
+		<div className={"luz amarilla " + (enabled === "amarilla" ? "brillo" : " " )} onClick={() => setEnabled("amarilla")}></div>
+		<div className={"luz verde " + (enabled === "verde" ? "brillo" : " " )} onClick={() => setEnabled("verde")}></div>
 		</div>
-		
-		</>
+		</div>		
 	);
 };
 

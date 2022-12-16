@@ -1,17 +1,27 @@
-/*.stick {
-    position: relative;
-    color: black;
+.container {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.stick {
+    
     font-size: 100px;
+    text-shadow: 0 0 30px black;
     
     
-}*/
+}
 
 .blackbox {
     display: inline-block;
     background: black;
     padding: 10px;
-    margin: auto;
-    border-radius: 15px
+    margin: 0 auto;
+    border-radius: 15px;
+margin-top: 140px;
+box-shadow: 0 0 30px black;
 
 }
 .luz {
@@ -40,5 +50,5 @@
 }
 
 .brillo {
-    box-shadow : 0 0 20px yellow
+    box-shadow : 0 0 50px greenyellow
 }
