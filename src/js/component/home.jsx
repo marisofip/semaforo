@@ -9,10 +9,19 @@ import rigoImage from "../../img/rigo-baby.jpg";
 const Home = () => {
 	
 	const [enabled , setEnabled] = useState("");
+	const boton = () => {
+		//alert("hola");
+		enabled === "" ? setEnabled("roja") : " ";
+		enabled === "roja" ? setEnabled("amarilla") : " ";
+		enabled === "amarilla" ? setEnabled("verde") : " ";
+		enabled === "verde" ? setEnabled("roja") : " ";
+		
+	}
 
+		 
 	
 	return (
-			
+			<>
 		<div className="container">
 			<div className= "stick position-absolute top-0"> | </div>
 					<div className="blackbox">
@@ -21,9 +30,16 @@ const Home = () => {
 		<div className={"luz verde " + (enabled === "verde" ? "brillo" : " " )} onClick={() => setEnabled("verde")}></div>
 		</div>
 		</div>		
+		<button type="button" className="btn btn-success"  onClick = {boton} >Success</button>
+		</>
 	);
+
+	
 };
 
 
 
-export default Home;
+
+export default Home; 
+
+
